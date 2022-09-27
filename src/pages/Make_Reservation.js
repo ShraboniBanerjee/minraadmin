@@ -8,14 +8,9 @@ import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Pagination from 'react-bootstrap/Pagination';
 import Table from 'react-bootstrap/Table';
-​
-​
-​
-​
 class Make_Reservation extends Component {
   constructor(props) {
     super(props);
-​
     this.state = {}
   }
   render() {
@@ -423,14 +418,10 @@ class Make_Reservation extends Component {
           </Pagination>
 ​
         </div>
-​
       </div>
 </div>
 </div>
-​
     )
-​
   }
 }
-​
 export default adminLayout(Make_Reservation);
