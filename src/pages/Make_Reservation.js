@@ -225,6 +225,12 @@ class Make_Reservation extends Component {
 ​
           <Form>
             <Row className="mb-3">
+
+            <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label>Upload Your Pic</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
+
               <Form.Group as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" />
@@ -265,6 +271,16 @@ class Make_Reservation extends Component {
                 <Form.Control />
               </Form.Group>
             </Row>
+
+            <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label>Upload Your Documents</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
+
+      <Form.Group controlId="formFile" className="mb-3">
+        <Form.Label>Upload Your Signature</Form.Label>
+        <Form.Control type="file" />
+      </Form.Group>
 ​
             <Form.Group className="mb-3" id="formGridCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
