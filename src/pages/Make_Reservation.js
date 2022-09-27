@@ -7,7 +7,10 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Pagination from 'react-bootstrap/Pagination';
-import Table from 'react-bootstrap/Table'
+import Table from 'react-bootstrap/Table';
+​
+​
+​
 ​
 class Make_Reservation extends Component {
   constructor(props) {
@@ -37,6 +40,8 @@ class Make_Reservation extends Component {
           {/* <li className="nav-item" role="presentation">
             <button className="nav-link" id="payment-tab-pane" data-bs-toggle="tab" data-bs-target="#payment-tab-pane" type="button" role="tab" aria-controls="payment-tab-pane" aria-selected="false">Payment</button>
           </li> */}
+​
+          {/* new comment 1 */}
         </ul>
 ​
         <div>
@@ -427,6 +432,5 @@ class Make_Reservation extends Component {
 ​
   }
 }
-
-
+​
 export default adminLayout(Make_Reservation);
