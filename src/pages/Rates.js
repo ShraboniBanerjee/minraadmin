@@ -1,6 +1,5 @@
 import React from 'react'
 import adminLayout from "../hoc/adminLayout"
-import "../assets/css/rates.css"
 import { Link } from 'react-router-dom';
 import imagenew from '../assets/images/edit.png'
 import imagenew1 from '../assets/images/trash.png'
