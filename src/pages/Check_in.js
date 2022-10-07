@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import adminLayout from "../hoc/adminLayout"
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -30,21 +28,21 @@ class Check_in extends Component {
       </Dropdown.Menu>
     </Dropdown>
     <p></p>
-<Row>
+
+<Form.Label>Stay Starts</Form.Label>
         <Form.Select>
-      <option>Stay Starts</option>
       <option value="1">11/03/22</option>
       <option value="2">4/07/22</option>
       <option value="3">25/10/22</option>
     </Form.Select>
-
+<p></p>
+    <Form.Label>Stay Ends</Form.Label>
     <Form.Select>
-      <option>Stay Ends</option>
       <option value="1">15/03/22</option>
       <option value="2">09/07/22</option>
       <option value="3">30/10/22</option>
     </Form.Select>
-    </Row>
+    
 <p></p>
     <Button variant="warning">Details</Button>{' '}
       <Button variant="success">Next</Button>{' '}
