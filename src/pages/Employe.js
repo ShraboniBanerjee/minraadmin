@@ -24,7 +24,7 @@ import Row from 'react-bootstrap/Row';
 
  <Popup trigger={<Button variant="primary">Add New Employee</Button>
 } >
-    <div style={{backgroundColor: "smokewhite", color: "black"}}>
+    <div style={{backgroundColor: "blue", color: "black"}}>
     <Form>
       <Row>
         <Col>
