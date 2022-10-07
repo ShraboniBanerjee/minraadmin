@@ -24,43 +24,43 @@ import Row from 'react-bootstrap/Row';
 
  <Popup trigger={<Button variant="primary">Add New Employee</Button>
 } >
-    <div>
+    <div style={{backgroundColor: "smokewhite", color: "black"}}>
     <Form>
       <Row>
         <Col>
-        <Form.Label>User ID</Form.Label>
+        <Form.Label style={{color: "black"}}>User ID</Form.Label>
           <Form.Control placeholder="User ID" />
         </Col>
         <Col>
-        <Form.Label>Mobile</Form.Label>
+        <Form.Label style={{color: "black"}}>Mobile</Form.Label>
           <Form.Control placeholder="Phn No" />
         </Col>
       </Row>
 
       <Row>
         <Col>
-        <Form.Label>Name</Form.Label>
+        <Form.Label style={{color: "black"}}>Name</Form.Label>
           <Form.Control placeholder="Name" />
         </Col>
         <Col>
-        <Form.Label>Salary</Form.Label>
+        <Form.Label style={{color: "black"}}>Salary</Form.Label>
           <Form.Control placeholder="Salary" />
         </Col>
       </Row>
 
       <Row>
         <Col>
-        <Form.Label>Email</Form.Label>
+        <Form.Label style={{color: "black"}}>Email</Form.Label>
           <Form.Control type="Email" placeholder="Email" />
         </Col>
         <Col>
-        <Form.Label>Password</Form.Label>
+        <Form.Label style={{color: "black"}}>Password</Form.Label>
           <Form.Control type="password" placeholder="******" />
         </Col>
       </Row>
 
        <Form.Group className="xs" controlId="formBasicPassword">
-        <Form.Label>Confirm Password</Form.Label>
+        <Form.Label style={{color: "black"}}>Confirm Password</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
 
