@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import adminLayout from "../hoc/adminLayout"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
+import Popup from 'reactjs-popup';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
 
 
  class Employe extends React.Component {
@@ -17,7 +21,71 @@ import Button from 'react-bootstrap/Button';
 
 <p></p>
 
- <Button variant="primary">Add New Employee</Button>{' '}
+
+ <Popup trigger={<Button variant="primary">Add New Employee</Button>
+} >
+    <div>
+    <Form>
+      <Row>
+        <Col>
+        <Form.Label>User ID</Form.Label>
+          <Form.Control placeholder="User ID" />
+        </Col>
+        <Col>
+        <Form.Label>Mobile</Form.Label>
+          <Form.Control placeholder="Phn No" />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+        <Form.Label>Name</Form.Label>
+          <Form.Control placeholder="Name" />
+        </Col>
+        <Col>
+        <Form.Label>Salary</Form.Label>
+          <Form.Control placeholder="Salary" />
+        </Col>
+      </Row>
+
+      <Row>
+        <Col>
+        <Form.Label>Email</Form.Label>
+          <Form.Control type="Email" placeholder="Email" />
+        </Col>
+        <Col>
+        <Form.Label>Password</Form.Label>
+          <Form.Control type="password" placeholder="******" />
+        </Col>
+      </Row>
+
+       <Form.Group className="xs" controlId="formBasicPassword">
+        <Form.Label>Confirm Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+
+
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Saved my info" />
+      </Form.Group>
+<Col>
+      <Form.Check type="radio" label="Manager" />
+      <Form.Check type="radio" label="Receptionist" />
+      <Form.Check type="radio" label="Staff" />
+</Col>
+
+      <Button variant="success" type="submit">
+        Submit
+      </Button>
+      <Button variant="danger" type="submit">
+        Cancel
+      </Button>
+</Form>
+
+    
+
+    </div>
+  </Popup>
 
  <h3>
 
