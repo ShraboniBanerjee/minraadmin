@@ -17,11 +17,9 @@ import Checkin from './pages/Check_in';
 import Room from './pages/Room';
 import Addroom from './pages/Add_room';
 import Bookings from './pages/Bookings';
-import Lostandfounds from './pages/Lost_and_founds';
 import Roomservices from './pages/Roomservices';
 import Arrivals from './pages/Arrivals';
 import Departures from './pages/Departures';
-import Inhouseguest from './pages/In_house_guest';
 import Food from './pages/Food';
 import Gym from './pages/Gym';
 import Sports  from './pages/Sports';
@@ -51,12 +49,10 @@ function App() {
                 <Route exact path='/Add_room' element={<Addroom/>} />
                 <Route exact path='/Add_employee' element={<Addemployee/>} />
                 <Route exact path='/bookings' element={<Bookings/>} />
-                <Route exact path='/lost_and_founds' element={<Lostandfounds/>} />
-                <Route exact path='/roomservices' element={<Roomservices/>} />
+               <Route exact path='/roomservices' element={<Roomservices/>} />
                 <Route exact path='/arrivals' element={<Arrivals/>} />
                 <Route exact path='/departures' element={<Departures/>} />
-                <Route exact path='/in_house_guest' element={<Inhouseguest/>} />
-                
+              
                 <Route exact path='/food' element={<Food/>} />
                 <Route exact path='/gym' element={<Gym/>} />
                 <Route exact path='/sports' element={<Sports/>} />
