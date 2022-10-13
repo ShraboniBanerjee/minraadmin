@@ -54,12 +54,10 @@ class Sidebar extends React.Component {
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                             <li><Link to={"/room"} className="rounded">Room</Link></li>
                             <li><Link to={"/bookings"} className="rounded">Bookings</Link></li>
-                            <li><Link to={"/lost_and_founds"} className="rounded">Lost And Founds</Link></li>
-                            <li><Link to={"/roomservices"} className="rounded">Roomservices</Link></li>
+                           <li><Link to={"/roomservices"} className="rounded">Roomservices</Link></li>
                             <li><Link to={"/arrivals"} className="rounded">Arrivals</Link></li>
                             <li><Link to={"/departures"} className="rounded">Departures</Link></li>
-                            <li><Link to={"/in_house_guest"} className="rounded">In House Guest</Link></li>
-                            <li>
+                         <li>
                                 <Link to="/rates" className="rounded">Rates</Link></li>
                         </ul>
                         </div>
