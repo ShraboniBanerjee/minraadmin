@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import adminLayout from "../hoc/adminLayout"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
-import Popup from 'reactjs-popup';
-import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
 
 
  class Employe extends React.Component {
@@ -22,82 +19,43 @@ import Row from 'react-bootstrap/Row';
 <p></p>
 
 
- <Popup trigger={<Button variant="primary">Add New Employee</Button>
-} >
-    <div style={{backgroundColor: "blue", color: "black"}}>
-    <Form>
-      <Row>
-        <Col>
-        <Form.Label style={{color: "black"}}>User ID</Form.Label>
-          <Form.Control placeholder="User ID" />
-        </Col>
-        <Col>
-        <Form.Label style={{color: "black"}}>Mobile</Form.Label>
-          <Form.Control placeholder="Phn No" />
-        </Col>
-      </Row>
-
-      <Row>
-        <Col>
-        <Form.Label style={{color: "black"}}>Name</Form.Label>
-          <Form.Control placeholder="Name" />
-        </Col>
-        <Col>
-        <Form.Label style={{color: "black"}}>Salary</Form.Label>
-          <Form.Control placeholder="Salary" />
-        </Col>
-      </Row>
-
-      <Row>
-        <Col>
-        <Form.Label style={{color: "black"}}>Email</Form.Label>
-          <Form.Control type="Email" placeholder="Email" />
-        </Col>
-        <Col>
-        <Form.Label style={{color: "black"}}>Password</Form.Label>
-          <Form.Control type="password" placeholder="******" />
-        </Col>
-      </Row>
-
-       <Form.Group className="xs" controlId="formBasicPassword">
-        <Form.Label style={{color: "black"}}>Confirm Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-
-
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Saved my info" />
-      </Form.Group>
-<Col>
-      <Form.Check type="radio" label="Manager" />
-      <Form.Check type="radio" label="Receptionist" />
-      <Form.Check type="radio" label="Staff" />
-</Col>
-
-      <Button variant="success" type="submit">
-        Submit
-      </Button>
-      <Button variant="danger" type="submit">
-        Cancel
-      </Button>
-</Form>
-
-    
-
-    </div>
-  </Popup>
-
+ <Button variant="primary" href="/Add_employee">Add New Employee</Button>
  <h3>
 
  </h3>
 <Table striped bordered hover>
 <thead>
   <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Phone Number</th>
-    <th>Role</th>
+    <th>ID
+    <Form.Control
+        type="text"
+        id="text"
+      />
+    </th>
+    <th>Name
+    <Form.Control
+        type="text"
+        id="text"
+      />
+    </th>
+    <th>Email
+    <Form.Control
+        type="text"
+        id="text"
+      />
+    </th>
+    <th>Phone Number
+    <Form.Control
+        type="text"
+        id="text"
+      />
+    </th>
+    <th>Role
+    <Form.Control
+        type="text"
+        id="text"
+      />
+    </th>
     <th><Button variant="warning">Filter</Button>{' '}</th>
   </tr>
 </thead>
