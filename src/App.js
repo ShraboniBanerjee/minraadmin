@@ -12,11 +12,10 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Rates from './pages/Rates';
 import Baserate from './pages/Base_rate';
 import Employe from './pages/Employe';
-import Guests from './pages/Guests';
-import Announcements from './pages/Announcements';
-import Events from './pages/Events'
+import Addemployee from './pages/Add_employee';
 import Checkin from './pages/Check_in';
 import Room from './pages/Room';
+import Addroom from './pages/Add_room';
 import Bookings from './pages/Bookings';
 import Lostandfounds from './pages/Lost_and_founds';
 import Roomservices from './pages/Roomservices';
@@ -47,12 +46,10 @@ function App() {
                 <Route exact path='/rates' element={<Rates/>} />
                 <Route exact path='/base_rates' element={<Baserate/>} />
                 <Route exact path='/employe' element={<Employe/>} />
-
-                <Route exact path='/guests' element={<Guests/>} />
-                <Route exact path='/announcement' element={<Announcements/>} />
-                <Route exact path='/events' element={<Events/>} />
                 <Route exact path='/check-in' element={<Checkin/>} />
                 <Route exact path='/room' element={<Room/>} />
+                <Route exact path='/Add_room' element={<Addroom/>} />
+                <Route exact path='/Add_employee' element={<Addemployee/>} />
                 <Route exact path='/bookings' element={<Bookings/>} />
                 <Route exact path='/lost_and_founds' element={<Lostandfounds/>} />
                 <Route exact path='/roomservices' element={<Roomservices/>} />
