@@ -41,10 +41,7 @@ class Sidebar extends React.Component {
                         <div className="collapse" id="dashboard-collapse">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                             <li><Link to={'/employe'} className="rounded">Employees</Link></li>
-                            <li><Link to={'/guests'} className="rounded">Guests</Link></li>
-                            <li><Link to={'/announcement'} className="rounded">Announcements</Link></li>
-                            <li><Link to={"/events"} className="rounded">Events</Link></li>
-                            <li><Link to={"/check-in"} className="rounded">Check-In</Link></li>
+                             <li><Link to={"/check-in"} className="rounded">Check-In</Link></li>
                         </ul>
                         </div>
                     </li> 
