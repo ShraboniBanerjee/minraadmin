@@ -76,7 +76,7 @@ class Add_employee extends Component {
 <Button variant="success">Submit</Button>{' '}
       <Button variant="danger">Cancel</Button>{' '}
 </Form>
-
+<p></p>
         </div>
     )
   }
